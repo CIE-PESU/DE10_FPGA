@@ -1,6 +1,7 @@
-# DE10_FPGA
+# AI Hardware Acceleration on the DE10_FPGA
 
-This repository is a compilation of FPGA experiments on the Intel Cyclone V DE10 FPGA board. 
-The following is the structure of this repository:
+This repository is a compilation AI Hardware Accelerator Concepts implemented on the Intel Cyclone V DE10 FPGA board. 
+
+
 * 
 
