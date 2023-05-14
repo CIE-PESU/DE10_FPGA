@@ -2,7 +2,7 @@
 
 Kindly note: This is a work in progress directory, with reference implementations from Hardware Acceleration RIs at CIE PESU
 
-FPGA Board: Intel Cyclone V DE10 Standard
+FPGA Board: Intel Cyclone V DE10 Standard \
 Tools: Intel Quartus Prime, ModelSim
 |Title|Files|
 |---|---|
