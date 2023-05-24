@@ -9,7 +9,7 @@ Tools: Intel Quartus Prime, ModelSim
 
 |Title|Files|
 |---|---|
-|Accelerator Building Blocks|[Pipelined Adder Tree](./Accelerator_Building_Blocks/Adder) <br> Parallel Prefix Adder - W0_Task <br> Carry Look-Ahead Adder - W0_Task <br> Carry Select Adder - W0_Task <br> Ripple Carry Adder - W0_Task <br> [MAC](./Accelerator_Building_Blocks/MAC) <br> Shift and Add Multiplier <br> Division Circuit <br> [Bitonic Sorter](./Accelerator_Building_Blocks/Sorter) <br> [Cordic Accelerator](./Accelerator_Building_Blocks/Cordic)|
+|Accelerator Building Blocks|[Pipelined Adder Tree](./Accelerator_Building_Blocks/Adder) <br> Parallel Prefix Adder - W0_Task <br> Carry Look-Ahead Adder - W0_Task <br> Carry Select Adder - W0_Task <br> Ripple Carry Adder - W0_Task <br> [MAC](./Accelerator_Building_Blocks/MAC) <br> Shift and Add Multiplier - W0_task <br> Division Circuit - W0_task <br> [Bitonic Sorter](./Accelerator_Building_Blocks/Sorter) <br> [Cordic Accelerator](./Accelerator_Building_Blocks/Cordic)|
 
 <!-- |Communication Protocols| I2C <br> SPI <br> UART|
 |Memory|FIFO <br> ROB|
