@@ -51,20 +51,21 @@ module Cordic_rotate(
    reg signed [width:0] 		       y [0:width-1];
    reg signed [31:0] 			       z [0:width-1];
 
-   always @(posedge clock)
+   always @*
      begin
-
+     
 	x_reg = (x_in>>>1)+(x_in>>>4)+(x_in>>>5);
 	y_reg = (y_in>>>1)+(y_in>>>4)+(y_in>>>5);
-
+	
+	
 	case(quad)
-	  2'b00,2'b11:
+	  2'b00,2'b11: // 1st or 4th quadrant
 	    begin		
 	       x[0] <= x_reg;
 	       y[0] <= y_reg;
 	       z[0] <= angle;
 	    end
-	  2'b01:				
+	  2'b01:				//secon
 	    begin
 	       x[0] <= -y_reg;
 	       y[0] <= x_reg;
@@ -76,25 +77,21 @@ module Cordic_rotate(
 	       y[0] <= -x_reg;
 	       z[0] <= {2'b11,angle[29:0]};
 	    end
-	  
-	endcase
+	  endcase
      end
 
    genvar i;
    generate
       for (i=0;i<15;i=i+1)
 	begin
-
 	   wire signed [width:0] xshift, yshift;
-
 	   assign xshift = x[i] >>> i;
 	   assign yshift = y[i] >>> i;
-
 	   always @(posedge clock)
 	     begin
-		x[i+1] <= z[i][31] ? x[i] + yshift :x[i]-yshift;
-		y[i+1] <= z[i][31] ? y[i] - xshift :y[i]+xshift;
-		z[i+1] <= z[i][31] ? z[i]+LUT_atan[i] :z[i]-LUT_atan[i];
+		x[i+1] <= z[i][31] ? x[i] + yshift : x[i] - yshift;
+		y[i+1] <= z[i][31] ? y[i] - xshift : y[i] + xshift;
+		z[i+1] <= z[i][31] ? z[i] + LUT_atan[i] : z[i] - LUT_atan[i];
 		out <= out+1;
 		if (out == 4'b1111)
 		  done = 'b1;
