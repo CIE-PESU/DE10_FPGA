@@ -1,0 +1,181 @@
+$date
+	Mon Jun 26 12:37:01 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder_tree_tb $end
+$var wire 11 ! y [10:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$var reg 8 $ c [7:0] $end
+$var reg 1 % clk $end
+$var reg 8 & d [7:0] $end
+$var reg 8 ' e [7:0] $end
+$var reg 8 ( f [7:0] $end
+$var reg 8 ) g [7:0] $end
+$var reg 8 * h [7:0] $end
+$var reg 1 + rst $end
+$scope module tree $end
+$var wire 8 , a [7:0] $end
+$var wire 8 - b [7:0] $end
+$var wire 8 . c [7:0] $end
+$var wire 1 / clk $end
+$var wire 8 0 d [7:0] $end
+$var wire 8 1 e [7:0] $end
+$var wire 8 2 f [7:0] $end
+$var wire 8 3 g [7:0] $end
+$var wire 8 4 h [7:0] $end
+$var wire 1 5 rst $end
+$var wire 11 6 y [10:0] $end
+$var reg 9 7 i11 [8:0] $end
+$var reg 9 8 i12 [8:0] $end
+$var reg 9 9 i13 [8:0] $end
+$var reg 9 : i14 [8:0] $end
+$var reg 10 ; i21 [9:0] $end
+$var reg 10 < i22 [9:0] $end
+$var reg 11 = i31 [10:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+x5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+0/
+bx .
+bx -
+bx ,
+x+
+bx *
+bx )
+bx (
+bx '
+bx &
+0%
+bx $
+bx #
+bx "
+bx !
+$end
+#10000
+0+
+05
+1%
+1/
+#20000
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+1+
+15
+0%
+0/
+#30000
+b100100 =
+b100100 !
+b100100 6
+b11010 <
+b1010 ;
+b1111 :
+b1011 9
+b111 8
+b11 7
+b1000 *
+b1000 4
+b111 )
+b111 3
+b110 (
+b110 2
+b101 '
+b101 1
+b100 &
+b100 0
+b11 $
+b11 .
+b10 #
+b10 -
+b1 "
+b1 ,
+0+
+05
+1%
+1/
+#40000
+0%
+0/
+#50000
+1%
+1/
+#60000
+0%
+0/
+#70000
+1%
+1/
+#80000
+0%
+0/
+#90000
+1%
+1/
+#100000
+0%
+0/
+#110000
+1%
+1/
+#120000
+0%
+0/
+#130000
+1%
+1/
+#140000
+0%
+0/
+#150000
+1%
+1/
+#160000
+0%
+0/
+#170000
+1%
+1/
+#180000
+0%
+0/
+#190000
+1%
+1/
+#200000
+0%
+0/
+#210000
+1%
+1/
+#220000
+0%
+0/
+#230000
+1%
+1/
